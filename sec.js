@@ -389,60 +389,75 @@
 
 // let arr = [];
 
-// for (let i = 1; i <= n; i++) {
-//     arr[i - 1] = i;
+// // for (let i = 1; i <= n; i++) {
+// //     arr[i - 1] = i;
+// // }
+// // console.log("Array:", arr);
+
+// // // Sum calculation
+// // let sum = arr.reduce((prev, curr) => {
+// //     return prev + curr;
+// // }, 0);
+// // console.log("Sum:", sum);
+
+// // // Factorial calculation
+// // let factorial = arr.reduce((prev, curr) => {
+// //     return prev * curr;
+// // }, 1);
+// // console.log("Factorial:", factorial);
+// function greet(name){
+//     console.log(name)
 // }
-// console.log("Array:", arr);
+// greet("Asad");
 
-// // Sum calculation
-// let sum = arr.reduce((prev, curr) => {
-//     return prev + curr;
-// }, 0);
-// console.log("Sum:", sum);
+// let num = [1,2,3,4,5,67,8,9,10]
 
-// // Factorial calculation
-// let factorial = arr.reduce((prev, curr) => {
-//     return prev * curr;
-// }, 1);
-// console.log("Factorial:", factorial);
-function greet(name){
-    console.log(name)
-}
-greet("Asad");
+// num.forEach(function (num){
+//     console.log(num);
+// })
 
-let num = [1,2,3,4,5,67,8,9,10]
+// let nums = [1,2,3,4,5]
+//  let square = nums.map((num)=> {
+//     return num * num;
+//  })
+//  console.log(square);
 
-num.forEach(function (num){
-    console.log(num);
-})
+//  let ages = [12,18,19,20,24,25]
 
-let nums = [1,2,3,4,5]
- let square = nums.map((num)=> {
-    return num * num;
- })
- console.log(square);
+//  let adults = ages.filter(function(age){
+//     return age >= 18;
+//  })
 
- let ages = [12,18,19,20,24,25]
+//  console.log(adults);
 
- let adults = ages.filter(function(age){
-    return age >= 18;
- })
+//  let arr = [1,2,3,4,5]
 
- console.log(adults);
+//  let sum =arr.reduce((prev,curr)=>{
+//     return prev + curr
+//  })
+// console.log(sum);
 
- let arr = [1,2,3,4,5]
+// let heading = document.getElementsByClassName("heading");
+// console.dir(heading);
+// console.log(heading);
 
- let sum =arr.reduce((prev,curr)=>{
-    return prev + curr
- })
-console.log(sum);
+// let element = document.querySelectorAll("p")
+// console.dir(element);
+// console.log(element);
 
+// let div = document.querySelector("div");
+// console.dir(div);
 
+// let heading = document.querySelector("h2")
 
+let h2 = document.querySelector("h2")
+console.dir(h2)
+h2.innerText = h2.innerText +  " From Batman";
 
-
-
-
+let divs = document.querySelectorAll(".box")
+divs[0].innerText = "new Unique value1";
+divs[1].innerText = "new Unique value2";
+divs[2].innerText = "new Unique value3";
 
 
 
