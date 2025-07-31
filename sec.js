@@ -450,16 +450,24 @@
 
 // let heading = document.querySelector("h2")
 
-let h2 = document.querySelector("h2")
-console.dir(h2)
-h2.innerText = h2.innerText +  " From Batman";
+// let h2 = document.querySelector("h2")
+// // console.dir(h2);
+// h2.innerText = h2.innerText + " from Batman"
 
-let divs = document.querySelectorAll(".box")
-divs[0].innerText = "new Unique value1";
-divs[1].innerText = "new Unique value2";
-divs[2].innerText = "new Unique value3";
+// let divs = document.querySelectorAll(".box")
+// divs[0].innerText = "New unique Value"
+// divs[1].innerText = "New unique Value1"
+// divs[2].innerText = "New unique Value"
+// console.dir(divs);
 
+let div = document.querySelector("div");
+console.log(div);
 
+let id = div.getAttribute("id");
+console.log(id);
+
+let name = document.querySelector('name')
+console.log(name)
 
 
 
