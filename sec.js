@@ -460,19 +460,50 @@
 // divs[2].innerText = "New unique Value"
 // console.dir(divs);
 
-let div = document.querySelector("div");
-console.log(div);
+// let div = document.querySelector("div");
+// console.log(div);
 
-let id = div.getAttribute("id");
-console.log(id);
+// let id = div.getAttribute("id");
+// console.log(id);
 
-let name = document.querySelector('name')
-console.log(name)
+// let name = document.querySelector("name")
+// console.log(name)
+
+// let p = document.querySelector("p")
+// console.log(p.getAttribute("class"))
+// console.log(p.setAttribute("class", "New Class"))
+
+// let div = document.querySelector("div")
+// // div.style.visibility = "hidden"
+// div.style.backgroundColor ="Red";
+// div.style.fontSize = "30px"
+// div.innerText = "Hello~"
 
 
+// let newBtn = document.createElement("button");
+// console.log("newBtn");
+// newBtn.innerText = "New Button"
+
+// let p = document.querySelector("p");
+// p.after(newBtn);
+
+let newHeading = document.createElement("h1");
+newHeading.innerHTML = "<i>HI, Iam New</i>";
+document.querySelector("body").prepend(newHeading);
 
 
+let newPara = document.createElement("p")
+newPara.innerText= "this is                       sasasasasa a new para"
+document.querySelector("p").after(newPara)
 
+
+let para = document.querySelector("p")
+para.remove(para)
+newHeading.remove();
+newPara.remove();
+
+let div = document.querySelector("div")
+div.remove();
 
 
 
