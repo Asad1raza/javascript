@@ -487,29 +487,96 @@
 // let p = document.querySelector("p");
 // p.after(newBtn);
 
-let newHeading = document.createElement("h1");
-newHeading.innerHTML = "<i>HI, Iam New</i>";
-document.querySelector("body").prepend(newHeading);
+// let newHeading = document.createElement("h1");
+// newHeading.innerHTML = "<i>HI, Iam New</i>";
+// document.querySelector("body").prepend(newHeading);
 
 
-let newPara = document.createElement("p")
-newPara.innerText= "this is                       sasasasasa a new para"
-document.querySelector("p").after(newPara)
+// let newPara = document.createElement("p")
+// newPara.innerText= "this is                       sasasasasa a new para"
+// document.querySelector("p").after(newPara)
 
 
-let para = document.querySelector("p")
-para.remove(para)
-newHeading.remove();
-newPara.remove();
+// let para = document.querySelector("p")
+// para.remove(para)
+// newHeading.remove();
+// newPara.remove();
 
-let div = document.querySelector("div")
-div.remove();
-
-
-
+// let div = document.querySelector("div")
+// div.remove();
 
 
 
+// let newBtn = document.createElement("button");
+// newBtn.innerText= "Click me!";
+
+// newBtn.style.backgroundColor = "red"
+// newBtn.style.color = "white"
+// document.querySelector("body").prepend(newBtn)
+
+// // qs2
+
+// let para = document.querySelector("p")
+// para.classList.add("newClass");
+
+
+// let btn1 = document.querySelector("#btn1");
+
+// btn1.addEventListener("click", (evt)=>{
+//     console.log("Button was clicked-Handler 1 ")
+// })
+// btn1.addEventListener("click", (evt)=>{
+//     console.log("Button was clicked-hANDLER 2")
+// })
+// const handler3 = ()=>{
+//     console.log("Button was clicked-Handler 3")
+// }
+// btn1.addEventListener("click", handler3)
+// btn1.addEventListener("click", (evt)=>{
+//     console.log("Button was clicked-Handler4")
+// })
+
+// btn1.removeEventListener("click",handler3)
+
+// btn1.onclick = (evt) =>{
+//     console.log(evt);
+//     console.log(evt.type);
+//     console.log(evt.target);
+//     console.log(evt.clientX, evt.clientY);
+    
+//     let a = 25;
+//     a++;
+//     console.log(a);
+// };
+
+// let btn2 = document.querySelector("#btn2");
+
+// btn2.ondblclick = () =>{
+//     console.log("Button 2 was 2Time")
+// };
+
+// let div = document.querySelector("div");
+ 
+// div.onmouseover = () =>{
+//     console.log("You are in Div");
+// };
+
+let modeBtn = document.querySelector("#mode");
+let body = document.querySelector("body");
+let currMode = "light";
+
+modeBtn.addEventListener("click", () => {
+  if (currMode === "light") {
+    currMode = "dark";
+    body.classList.remove("light");
+    body.classList.add("dark");
+  } else {
+    currMode = "light";
+    body.classList.remove("dark");
+    body.classList.add("light");
+  }
+  console.log(currMode);
+});
 
 
 
